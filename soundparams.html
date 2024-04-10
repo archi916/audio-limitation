@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitch Comparison Game</title>
     <link rel="stylesheet" href="tc_style.css">
 </head>
-
 <body>
     <div class="info">
         <h1>
             Welcome to the Pitch Comparison Game! <br>
             Listen to two notes and select the one with the lower pitch.
+            <hr>
+            As the sounds are very similar, it may be difficult to distinguish the pitch. <br>
         </h1>
     </div>
     <div class="cockpit">
@@ -21,15 +21,13 @@
                 <button id="startBtn">Start Game</button>
                 <button id="stopAllBtn">Stop Game</button>
             </div>
+            <div class="notes">
+                <button id="note1Btn">Note 1</button>
+                <button id="note2Btn">Note 2</button>
+            </div>
         </div>
     </div>
-    <div class="notes">
-        <audio id="note1"></audio>
-        <audio id="note2"></audio>
-        <button id="note1Btn">Note 1</button>
-        <button id="note2Btn">Note 2</button>
-    </div>
+    
     <script src="sp_script.js"></script>
 </body>
-
 </html>

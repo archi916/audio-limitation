@@ -43,11 +43,30 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
 }
 
 .controls button:hover {
   background-color: #45a049;
+}
+
+.notes button{
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  color: black;
+  border-color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  min-width: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
 }
 
 a{
