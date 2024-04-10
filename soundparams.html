@@ -4,32 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sound Parameter Simulation - Auditory</title>
+    <title>Pitch Comparison Game</title>
     <link rel="stylesheet" href="tc_style.css">
 </head>
 
 <body>
     <div class="info">
         <h1>
-            Sound parameters refer to the characteristics of sound that determine the way we perceive it. <br>
-            Some examples of sound parameters are pitch, loudness, and timbre. <br>
-            <hr>
-            The simulation will play two sound samples and ask the user to identify the lower pitch sound.<br>
-            The user is able to distinguish the lower pitch to a point beyond which distinguishing the two sounds becomes difficult. <br>
+            Welcome to the Pitch Comparison Game! <br>
+            Listen to two notes and select the one with the lower pitch.
         </h1>
     </div>
     <div class="cockpit">
         <div class="dashboard">
-            <div class="control-panel">
-                <div class="controls">
-                    do the one click thing
-                    <button id="startBtn">Simulate Temporal Conflict</button>
-                    <button id="stopSound1Btn">Warning 1 </button>
-                    <button id="stopSound2Btn">Warning 2 </button>
-                    <button id="stopAllBtn">Stop All</button>
-                </div>
+            <div class="controls">
+                <button id="startBtn">Start Game</button>
+                <button id="stopAllBtn">Stop Game</button>
             </div>
         </div>
+    </div>
+    <div class="notes">
+        <audio id="note1"></audio>
+        <audio id="note2"></audio>
+        <button id="note1Btn">Note 1</button>
+        <button id="note2Btn">Note 2</button>
     </div>
     <script src="sp_script.js"></script>
 </body>
