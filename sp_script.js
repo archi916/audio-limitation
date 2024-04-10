@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     function playNotes() {
-      osc1 = createOscillator(208); 
-      osc2 = createOscillator(205); 
+      osc1 = createOscillator(308); 
+      osc2 = createOscillator(305); 
   
       osc1.start();
       setTimeout(function() {
