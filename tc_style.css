@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+}
+
+.cockpit {
+  min-width: fit-content;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  min-width: fit-content;
+  width: fit-content;
+  max-width: 650px;
+  background-color: #222;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.controls {
+  margin-top: 20px;
+  min-width: fit-content;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.controls button:hover {
+  background-color: #45a049;
+}
+
+a{
+  color: white;
+}
+
+h1{
+  color:white;
+  text-align: center;
+}
+
+.info div{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-align: center;
+}

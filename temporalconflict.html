@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporal Conflict Simulation - Auditory</title>
+  <link rel="stylesheet" href="tc_style.css">
+</head>
+
+<body>
+  <div class="info">
+    <h1>
+      Two music samples will play simultaneously will different rhythms. <br>
+      There are two simulations: one with a simple metronome to demonstrate the conflicting rhythm, and one with a full drum beat to show how this can be confusing in more complicated audios such as songs <br>
+      Temporal conflict is introduced as the user finds these overlapping rhythms disorienting and distracting.
+    </h1>
+  </div>
+  <div class="cockpit">
+    <div class="dashboard">
+      <div class="control-panel">
+        <div class="controls">
+          <button id="metronome_start">Metronome Simulation</button>
+          <button id="drum_start">Drum Simulation</button>
+          <button id="stopAllBtn">Stop All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="tc_script.js"></script>
+</body>
+
+</html>
