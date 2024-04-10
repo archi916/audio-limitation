@@ -5,11 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let alarm1, alarm2;
   let alarm1Timeout, alarm2Timeout;
 
-  startBtn.addEventListener('click', function () {
-    isTemporalConflict = true;
-    simulateTemporalConflict(type='alarm');
-  });
-
   metronome_start.addEventListener('click', function () {
     isTemporalConflict = true;
     simulateTemporalConflict(type='metronome');
@@ -19,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     isTemporalConflict = true;
     simulateTemporalConflict(tyep='drum');
   });
-
 
   stopAllBtn.addEventListener('click', function () {
     stopAll();

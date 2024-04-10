@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const startBtn = document.getElementById('startBtn');
-    const stopAllBtn = document.getElementById('stopAllBtn');
     const note1Btn = document.getElementById('note1Btn');
     const note2Btn = document.getElementById('note2Btn');
     const dashboardDiv = document.querySelector('.dashboard');
@@ -12,10 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     startBtn.addEventListener('click', function () {
       isGameRunning = true;
       startGame();
-    });
-  
-    stopAllBtn.addEventListener('click', function () {
-      stopGame();
     });
   
     note1Btn.addEventListener('click', function () {
@@ -31,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     function playNotes() {
-      osc1 = createOscillator(208); // Set frequency for note 1
-      osc2 = createOscillator(205); // Set frequency for note 2
+      osc1 = createOscillator(208); 
+      osc2 = createOscillator(205); 
   
       osc1.start();
       setTimeout(function() {
@@ -54,15 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     function compareNotes(selectedNote) {
-      // Your logic to compare the notes
       const correctNote = (osc1.frequency.value < osc2.frequency.value) ? 1 : 2;
       if (selectedNote === correctNote) {
-        console.log("Correct note selected");
         dashboardDiv.style.borderColor = "green";
         note1Btn.style.borderColor = "green";
         note2Btn.style.borderColor = "green";
     } else {
-        console.log("Incorrect note selected");
         dashboardDiv.style.borderColor = "red";
         note1Btn.style.borderColor = "red";
         note2Btn.style.borderColor = "red";
